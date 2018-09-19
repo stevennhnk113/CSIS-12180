@@ -4,40 +4,23 @@
    Tutorial Case
    
    TSS Typographic Style Sheet
-   Author: Nguyen Nguyen
-   Date:   Sep 18, 2018
+   Author: 
+   Date:   
    
    Filename: tss_styles.css
 
 */
-@charset "utf-8";
+
 
 
 /* HTML and Body Styles */
-html {
-    background-color: hsl(27, 72%, 72%);
-}
-body {
-    color: rgb(91, 91, 91);
-    background-color: ivory;
-}
+
+
 
 
 
 /* Heading Styles */
-article#about_tss h1 {
-    color: white;
-    background-color: rgb(222,128,60);
-}
 
-article.syllabus h1, article.syllabus h2 {
-    background-color: rgb(255, 185, 255)
-}
-
-article#about_tss h2 {
-    color: white;
-    background-color: rgb(235, 177, 131);
-}
 
 
 
