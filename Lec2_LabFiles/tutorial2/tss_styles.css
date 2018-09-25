@@ -31,6 +31,7 @@ article#about_tss h1 {
 }
 
 article.syllabus h1, article.syllabus h2 {
+    color: rgb(101, 101, 101);
     background-color: rgb(255, 185, 255)
 }
 
