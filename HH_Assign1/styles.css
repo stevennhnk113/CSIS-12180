@@ -10,9 +10,24 @@ body {
 body > header {
 	margin: 0;
 	width: 100%;
+	display: block;
 	overflow: hidden;
 }
 
-body > header nav {
-	
+img#headerImage {
+	height: 30%;
+}
+
+nav {
+	display: table;
+	float: none;
+}
+
+nav ul {
+	display: table-row;
+	list-style: none;
+}
+
+nav ul li {
+	display: table-cell;
 }
