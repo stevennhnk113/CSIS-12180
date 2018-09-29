@@ -61,9 +61,23 @@ nav ul li a {
 	position: relative;
 }
 
-img#welcome_image {
-	max-width: 1020px;
-	max-height: 50%;
+.main_body {
+	margin: 0;
+	display: block;
+	position: relative;
+}
+
+.main_background {
+	width: 100%;
+}
+
+.main_content {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.6);
+	left: 20%;
+	top: 10%;
+	width: 60%;
+	height: 80%;
 }
 
 div#welcome {
@@ -81,6 +95,21 @@ div#welcome_text {
 	text-align: center;
 	vertical-align: middle;
 	position: absolute;
+	top: 50%;
+	left: 10%;
+	top: 25%;
+	width: 80%;
+	height: 50%;
+}
+
+/* Team */
+.instructor_list {
+	font: normal small-caps bold 3em/2em QuickSand, Verdana, Geneva, sans-serif;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	background-color: blue;
 	top: 50%;
 	left: 10%;
 	top: 25%;
