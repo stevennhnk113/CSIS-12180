@@ -15,7 +15,7 @@ body > header {
 }
 
 img#headerImage {
-	height: 30%;
+	width: 100%;
 }
 
 /* =============================================
@@ -55,18 +55,37 @@ nav ul li a {
    =============================================
 */
 
-body > div {
+#welcome_body {
 	margin: 0;
-	width: 100%;
-	overflow: hidden;
+	display: block;
 	position: relative;
+}
+
+img#welcome_image {
+	max-width: 1020px;
+	max-height: 50%;
 }
 
 div#welcome {
 	position: absolute;
+	background-color: rgba(255, 255, 255, 0.6);
+	left: 20%;
+	top: 10%;
+	width: 60%;
+	height: 80%;
+}
+
+div#welcome_text {
+	font: normal small-caps bold 3em/2em QuickSand, Verdana, Geneva, sans-serif;
 	color: black;
-	background-color: rgba(255, 255, 255, 0.5);
-	z-index: -10;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	top: 25%;
+	width: 80%;
+	height: 50%;
 }
 
 /* =============================================
