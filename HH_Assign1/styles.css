@@ -29,8 +29,31 @@ body {
 body > header {
 	margin: 0;
 	width: 100%;
+	height: 100%;
 	display: block;
 	overflow: hidden;
+}
+
+#banner_container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#header_name {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font: normal small-caps bolder 4em/1em QuickSand, Verdana, Geneva, sans-serif;
+	background-color: rgba(255, 255, 255, 0.2)
+}
+
+#header_name a {
+	text-decoration: none;
+	color: black;
 }
 
 img#headerImage {
@@ -104,6 +127,9 @@ h2 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 div#welcome {
@@ -128,85 +154,50 @@ div#welcome_text {
 	height: 50%;
 }
 
-/* Team */
-#instructor_list_container {
-	position: absolute;
+.content {
 	list-style: none;
 	color: black;
 	text-align: center;
-	vertical-align: middle;
 	background-color: rgba(255, 255, 255, 0.6);
-	width: 40%;
-	left: 30%;
-	height: 65%;
-	top: 17%;
+	padding: 0px 30px;
 }
 
-#instructor_list_container > ul{
+.content > ul{
 	list-style: none;
 	padding-left: 0;
 }
 
+.content h1 {
+	margin-bottom: 5px;
+}
+
+.content dd {
+	list-style: none;
+	margin-inline-start: 40px;
+	margin-inline-end: 40px;
+	padding-bottom: 40px;
+}
+
+.content dt {
+	list-style: none;
+	font-size: 1.5em;
+}
+
 /* Weight Loss */
 #about_weight_loss {
-	position: absolute;
-	list-style: none;
-	color: black;
-	text-align: center;
-	vertical-align: middle;
-	background-color: rgba(255, 255, 255, 0.6);
 	width: 40%;
-	left: 30%;
-	height: 65%;
-	top: 17%;
 }
 
-#about_weight_loss h1 {
-	margin-bottom: 10px;
+/* Strength */
+#about_strength {
+	width: 50%;
 }
 
-#about_weight_loss dd {
-	list-style: none;
-	margin-inline-start: 40px;
-	margin-inline-end: 40px;
-	padding-bottom: 40px;
-}
-
-#about_weight_loss dt {
-	list-style: none;
-	font-size: 1.5em;
-}
-
+/* Membership */
 /* Weight Loss */
-#about_strength_loss {
-	position: absolute;
-	list-style: none;
-	color: black;
-	text-align: center;
-	vertical-align: middle;
-	background-color: rgba(255, 255, 255, 0.6);
-	width: 40%;
-	left: 30%;
-	height: 80%;
-	top: 10%;
+#membership {
+	width: 50%;
 }
-
-#about_strength_loss h1 {
-	margin-bottom: 10px;
-}
-
-#about_strength_loss dd {
-	list-style: none;
-	margin-inline-start: 40px;
-	margin-inline-end: 40px;
-	padding-bottom: 40px;
-}
-
-#about_strength_loss dt {
-	list-style: none;
-	font-size: 1.5em;
-}
-
 
 /* =============================================
 	Footer
