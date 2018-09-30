@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body {
+	background-color: aqua;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1020px;
@@ -32,7 +33,6 @@ nav {
 nav ul {
 	display: table-row;
 	list-style: none;
-
 }
 
 nav ul li {
@@ -55,6 +55,16 @@ nav ul li a {
    =============================================
 */
 
+/* General */
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+/* Main content */
 #welcome_body {
 	margin: 0;
 	display: block;
@@ -63,6 +73,7 @@ nav ul li a {
 
 .main_body {
 	margin: 0;
+	width: 100%;
 	display: block;
 	position: relative;
 }
@@ -73,11 +84,8 @@ nav ul li a {
 
 .main_content {
 	position: absolute;
-	background-color: rgba(255, 255, 255, 0.6);
-	left: 20%;
-	top: 10%;
-	width: 60%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 }
 
 div#welcome {
@@ -103,19 +111,84 @@ div#welcome_text {
 }
 
 /* Team */
-.instructor_list {
-	font: normal small-caps bold 3em/2em QuickSand, Verdana, Geneva, sans-serif;
+#instructor_list_container {
+	position: absolute;
+	list-style: none;
 	color: black;
 	text-align: center;
 	vertical-align: middle;
-	position: absolute;
-	background-color: blue;
-	top: 50%;
-	left: 10%;
-	top: 25%;
-	width: 80%;
-	height: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 40%;
+	left: 30%;
+	height: 65%;
+	top: 17%;
 }
+
+#instructor_list_container > ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+/* Weight Loss */
+#about_weight_loss {
+	position: absolute;
+	list-style: none;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 40%;
+	left: 30%;
+	height: 65%;
+	top: 17%;
+}
+
+#about_weight_loss h1 {
+	margin-bottom: 10px;
+}
+
+#about_weight_loss dd {
+	list-style: none;
+	margin-inline-start: 40px;
+	margin-inline-end: 40px;
+	padding-bottom: 40px;
+}
+
+#about_weight_loss dt {
+	list-style: none;
+	font-size: 1.5em;
+}
+
+/* Weight Loss */
+#about_strength_loss {
+	position: absolute;
+	list-style: none;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 40%;
+	left: 30%;
+	height: 70%;
+	top: 15%;
+}
+
+#about_strength_loss h1 {
+	margin-bottom: 10px;
+}
+
+#about_strength_loss dd {
+	list-style: none;
+	margin-inline-start: 40px;
+	margin-inline-end: 40px;
+	padding-bottom: 40px;
+}
+
+#about_strength_loss dt {
+	list-style: none;
+	font-size: 1.5em;
+}
+
 
 /* =============================================
 	Footer
