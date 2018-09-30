@@ -169,8 +169,8 @@ div#welcome_text {
 	background-color: rgba(255, 255, 255, 0.6);
 	width: 40%;
 	left: 30%;
-	height: 70%;
-	top: 15%;
+	height: 80%;
+	top: 10%;
 }
 
 #about_strength_loss h1 {
@@ -197,14 +197,22 @@ div#welcome_text {
 
 footer {
 	vertical-align: middle;
+	background-color: black;
+	height: 50px;
 }
 
-footer address{
-	height: 2em;
+footer address {
+	height: 100%;
+}
+
+footer address div{
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: white;
-	background-color: black;
 	font: normal small-caps bold .9em/1em QuickSand, Verdana, Geneva, sans-serif;
+	height: 100%;
 }
 
 footer address a {
