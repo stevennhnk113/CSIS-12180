@@ -1,4 +1,22 @@
+/*
+	Assignment 1
+   Author: Nguyen Nguyen
+   ID: 300298479
+   
+   Filename: styles.css
+*/
+
 @charset "utf-8";
+@font-face {
+    font-family: Quicksand;
+    src:url(Quicksand-Regular.woff) format('woff'),
+        url(Quicksand-Regular.ttf) format('ttf')
+}
+
+body {
+	color: brown;
+	font-size: 1.2em;
+}
 
 body {
 	background-color: aqua;
@@ -211,7 +229,12 @@ footer address div{
 	align-items: center;
 	justify-content: center;
 	color: white;
-	font: normal small-caps bold .9em/1em QuickSand, Verdana, Geneva, sans-serif;
+	font-style: normal;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: .7em;
+	line-height: 1em;
+	font-family: QuickSand, Verdana, Geneva, sans-serif;
 	height: 100%;
 }
 
