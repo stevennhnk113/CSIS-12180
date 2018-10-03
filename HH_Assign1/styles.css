@@ -16,9 +16,6 @@
 body {
 	color: brown;
 	font-size: 1.2em;
-}
-
-body {
 	background-color: aqua;
 	margin: 0 auto;
 	width: 100%;
@@ -78,7 +75,7 @@ nav ul {
 
 nav ul li {
 	display: table-cell;
-	width: 25%;
+	width: 20%;
 	height: 40px;
 	text-align: center;
 	vertical-align: middle;
@@ -112,6 +109,10 @@ h2 {
 	position: relative;
 }
 
+#studio_description {
+	font: normal small-caps bold 0.5em/1em QuickSand, Verdana, Geneva, sans-serif;
+}
+
 .main_body {
 	margin: 0;
 	width: 100%;
@@ -142,14 +143,13 @@ div#welcome {
 }
 
 div#welcome_text {
-	font: normal small-caps bold 3em/2em QuickSand, Verdana, Geneva, sans-serif;
+	font: normal normal bold 3em/2em QuickSand, Verdana, Geneva, sans-serif;
 	color: black;
 	text-align: center;
 	vertical-align: middle;
 	position: absolute;
-	top: 50%;
 	left: 10%;
-	top: 25%;
+	top: 5%;
 	width: 80%;
 	height: 50%;
 }
