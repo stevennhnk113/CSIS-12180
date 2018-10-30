@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*
+	Author: Nguyen Nguyen
+	Student ID: 300298479
+   
+	Filename: Main.css
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+	max-width: 1340px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+/* Header */
+#header_col {
+	background-image: url(Banner.jpg);
+}
+
+#header_text {
+	color: white;
+	text-align: center;
+}
+
+/* Layout */
+div.container {
+	height: 100%;
+}
+
+div.row {
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col-"] {
+    float: left;
+}
+
+div.col-1-1 { width: 100% }
+div.col-1-4 { width: 25% }
+div.col-3-4 { width: 75% }
+
+#calendar_row, #weekly_schedule_container {
+	height: 80%;
+}
+
+/* Month calendar table */
+table.month_calendar {
+	border-collapse: collapse;
+	width: 100%;
+	height: 100%;
+}
+
+table.month_calendar th, table.month_calendar td {
+	border: 1px solid black;
+}
+
+/* Weekly Schedule table */
+table.weekly_schedule {
+	border-collapse: collapse;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+table.weekly_schedule th, table.weekly_schedule td {
+	border: 1px solid black;
+}
