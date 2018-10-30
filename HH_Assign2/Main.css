@@ -54,6 +54,10 @@ div.col-3-4 { width: 75% }
 	height: 80%;
 }
 
+div.row3 {
+	height: 30px;
+}
+
 /* Month calendar table */
 table.month_calendar {
 	border-collapse: collapse;
@@ -61,8 +65,16 @@ table.month_calendar {
 	height: 100%;
 }
 
+div.month_calendar_container {
+	
+}
+
 table.month_calendar th, table.month_calendar td {
 	border: 1px solid black;
+}
+
+table.month_calendar tr{
+	height: 45px;
 }
 
 /* Weekly Schedule table */
@@ -75,4 +87,29 @@ table.weekly_schedule {
 
 table.weekly_schedule th, table.weekly_schedule td {
 	border: 1px solid black;
+}
+
+table.weekly_schedule thead tr {
+	height: 50px;
+}
+
+table.weekly_schedule tbody tr {
+	height: 57px;
+}
+
+col#daily_time {
+    background: rgb(218, 210, 218);
+    width: 15%;
+}
+
+col.weekly_days {
+	width: 16%;
+}
+
+/* Footer */
+footer {
+	background: black;
+	padding: 10px;
+	text-align: center;
+	color: white;
 }

@@ -30,12 +30,38 @@ table.schedule th, table.schedule td {
 
 
 /* Table Caption Styles */
-
+table.schedule caption {
+    caption-side: bottom;
+    text-align: right;
+}
 
 
 /* Row Group Styles */
+table.schedule thead {
+    background-color: rgb(153, 0, 153);
+}
 
+table.schedule thead tr {
+    height: 30px;
+}
+
+table.schedule tbody tr {
+    height: 30px;
+}
+
+table.schedule tfoot {
+    background-color: black;
+    color: white;
+}
 
 
 /* Column Group Styles */
+col#firstcol {
+    background: rgb(218, 210, 218);
+    width: 16%;
+}
+
+col.dayCols {
+    background: rgb(255, 220, 255);
+}
 
