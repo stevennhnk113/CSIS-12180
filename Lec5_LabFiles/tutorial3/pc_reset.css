@@ -31,6 +31,7 @@ nav, ol, p, section, span, ul {
     padding: 0;
     margin: 0;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 nav ul {
