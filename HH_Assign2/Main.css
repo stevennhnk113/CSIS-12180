@@ -1,4 +1,3 @@
-@charset "utf-8";
 /*
 	Author: Nguyen Nguyen
 	Student ID: 300298479
@@ -6,8 +5,16 @@
 	Filename: Main.css
 */
 
+@charset "utf-8";
+@font-face {
+    font-family: Quicksand;
+    src:url(Quicksand-Regular.woff) format('woff'),
+        url(Quicksand-Regular.ttf) format('ttf')
+}
+
 html {
 	height: 100%;
+	font-family: QuickSand, Verdana, Geneva, sans-serif;
 }
 
 body {
@@ -58,15 +65,28 @@ div.row3 {
 	height: 30px;
 }
 
+div.month_calendar_container {
+	padding-right: 10px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+div.month_calendar_container {
+	padding-right: 10px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+div#weekly_schedule_container {
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
 /* Month calendar table */
 table.month_calendar {
 	border-collapse: collapse;
 	width: 100%;
 	height: 100%;
-}
-
-div.month_calendar_container {
-	
 }
 
 table.month_calendar th, table.month_calendar td {
@@ -75,6 +95,18 @@ table.month_calendar th, table.month_calendar td {
 
 table.month_calendar tr{
 	height: 45px;
+}
+
+table caption {
+	text-align: right;
+	color: white;
+	caption-side: bottom;
+	background: black;
+	padding-right: 5px;
+}
+
+tr.even_row th {
+	background: rgb(218, 210, 218);
 }
 
 /* Weekly Schedule table */
@@ -97,9 +129,15 @@ table.weekly_schedule tbody tr {
 	height: 57px;
 }
 
+table.weekly_schedule th {
+	font-size: larger;
+	font-weight: bold;
+	color:white;
+	background: gray;
+}
+
 col#daily_time {
-    background: rgb(218, 210, 218);
-    width: 15%;
+	width: 15%;
 }
 
 col.weekly_days {
@@ -111,5 +149,10 @@ footer {
 	background: black;
 	padding: 10px;
 	text-align: center;
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
 	color: white;
 }
