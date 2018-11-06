@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!--
+	<!--
       New Perspectives on HTML5 and CSS3, 7th Edition
       Tutorial 7
       Tutorial Case
@@ -15,94 +15,192 @@
 
    -->
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Red Ball Survey</title>
-    <link href="rb_reset.css" rel="stylesheet" />
-    <link href="rb_styles.css" rel="stylesheet" />
-    <link href="rb_forms.css" rel="stylesheet" />
-    <script src="rb_formsubmit.js"></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Red Ball Survey</title>
+	<link href="rb_reset.css" rel="stylesheet" />
+	<link href="rb_styles.css" rel="stylesheet" />
+	<link href="rb_forms.css" rel="stylesheet" />
+	<script src="rb_formsubmit.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <img src="rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
-        <nav> <a id="navicon" href="#"><img src="rb_navicon.png" alt="" /></a>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">directions</a></li>
-                <li><a href="#">coupons</a></li>
-                <li><a href="#">orders</a></li>
-                <li><a href="#">catering</a></li>
-                <li><a href="#">reviews</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>Customer Survey</h1>
-        <p>Thank you for taking our customer survey. Your response
-            helps Red Ball Pizza maintain the tradition that has made
-            us the top-rated pizzeria in the metro area.
-            All participants are automatically entered into a monthly
-            drawing to receive a <em>Red Ball Express PizzaFest</em> containing
-            two large pizzas, a 2-liter soda, and a side
-            order of chicken wings. Check your e-mail inbox for
-            contest results. </p>
-        <p>Surveys are private and confidential. Red Ball
-            Pizza will not share your contact information with third
-            parties, <em>ever</em>. </p>
-        <p>Required values are marked by an asterisk (*)</p>
-        <form id="survey" action="">
-            <fieldset id="custInfo">
-                <legend>Customer Information</legend>
-                <label for="custName">Name*</label>
-                <input name="custName" id="custName" type="text" />
-                <br/>
+	<header>
+		<img src="rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
+		<nav> <a id="navicon" href="#"><img src="rb_navicon.png" alt="" /></a>
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">directions</a></li>
+				<li><a href="#">coupons</a></li>
+				<li><a href="#">orders</a></li>
+				<li><a href="#">catering</a></li>
+				<li><a href="#">reviews</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h1>Customer Survey</h1>
+		<p>Thank you for taking our customer survey. Your response
+			helps Red Ball Pizza maintain the tradition that has made
+			us the top-rated pizzeria in the metro area.
+			All participants are automatically entered into a monthly
+			drawing to receive a <em>Red Ball Express PizzaFest</em> containing
+			two large pizzas, a 2-liter soda, and a side
+			order of chicken wings. Check your e-mail inbox for
+			contest results. </p>
+		<p>Surveys are private and confidential. Red Ball
+			Pizza will not share your contact information with third
+			parties, <em>ever</em>. </p>
+		<p>Required values are marked by an asterisk (*)</p>
+		<form id="survey" action="">
+			<fieldset id="custInfo">
+				<legend>Customer Information</legend>
+				
+				<div class="formRow">
+					<label for="custName">Name*</label>
+					<input name="custName" id="custName" type="text" 
+						placeholder="first and last name"/>
+				</div>
 
-                <label for="custStreet">Street*</label>
-                <input name="custStreet" id="custStreet" type="text" />
-                <br/>
+				<div class="formRow">
+					<label for="custStreet">Street*</label>
+					<input name="custStreet" id="custStreet" type="text" />
+				</div>
 
-                <label for="custCity">City*</label>
-                <input name="custCity" id="custCity" type="text" />
-                <br/>
+				<div class="formRow">
+					<label for="custCity">City*</label>
+					<input name="custCity" id="custCity" type="text" />
+				</div>
 
-                <label for="custProvince">Province*</label>
-                <input name="custProvince" id="custProvince" type="text" />
-                <br/>
+				<div class="formRow">
+					<label for="custProvince">Province*</label>
+					<input name="custProvince" id="custProvince" type="text" />
+				</div>
 
-                <label for="custPostalCode">Postal Code*</label>
-                <input name="custPostalCode" id="custPostalCode" type="text" />
-            </fieldset>
-            <fieldset id="expInfo">
-                <legend>Share our experience at Redball Pizza</legend>
-            </fieldset>
-        </form>
+				<div class="formRow">
+					<label for="custPostalCode">Postal Code*</label>
+					<input name="custPostalCode" id="custPostalCode" type="text" 
+						placeholder="ANA NAN"/>
+				</div>
 
-    </section>
-    <footer>
-        <h1>ORDER</h1>
-        <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a>
-        <a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
-        <h1>ABOUT US</h1>
-        <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a> <a href="#">School Lunches</a>
-        <h1>CUSTOMER SERVICE</h1>
-        <a href="#">Gluten Free Crusts</a> <a href="#">Contact Us</a> <a href="#">FAQs</a>
-        <h1>MY ACCOUNT</h1>
-        <a href="#">Create an Account</a> <a href="#">Sign In</a> <a href="#">Order Status</a>
-        <h1>NUTRITION</h1>
-        <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
-        <h1>POLICIES</h1>
-        <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
-        <address>
-            Red Ball Pizza <br />
-            811 Beach Drive <br />
-            Ormond Beach, FL 32175 <br />
-            (386) 555 - 7499
-        </address>
-    </footer>
+				<div class="formRow">
+					<label for="custPhone">Phone Number</label>
+					<input name="custPhone" id="custPhone" type="tel"
+						placeholder="(nnn) nnn-nnnn">
+				</div>
+
+				<div class="formRow">
+					<label for="custEmail">Email</label>
+					<input name="custEmail" id="custEmail" type="email">
+				</div>
+			</fieldset>
+			<fieldset id="expInfo">
+				<legend>Share our experience at Redball Pizza</legend>
+				<div class="formRow">
+					<label for="visitDate">Date of visit</label>
+					<input name="visitData" id="visistData" type="date">
+				</div>
+
+				<div class="formRow">
+					<label for="orderType">Order Type</label>
+					<select multiple name="orderType" id="orderType" size="3">
+						<option value="order1">Carry Out</option>
+						<option value="order2">Deliverty</option>
+						<option value="order3">Dine In</option>
+						<option value="order4">Take 'n Bake</option>
+					</select>
+				</div>
+
+				<div class="formRow">
+					<label for="infoSrc">Where did you hear about us?</label>
+					<select multiple name="infoSrc" id="infoSrc" size="4">
+						<option value="value1">Internet</option>
+						<optgroup label="Print Media">
+							<option value="value2">Magazine</option>
+							<option value="value3">Newspaper</option>
+						</optgroup>
+						<option value="value4">Word of mouth</option>
+						<option value="value5">Other</option>
+					</select>
+				</div>
+
+				<div class="formRow">
+					<label for="dineOut">How many times do you dine out per month?</label>
+					<input type="range" name="dineOut" id="dineOut"
+						value="1" min="0" max="20" step="1">
+				</div>
+
+				<div class="formRow">
+					<input type="checkbox" name="mailMe" id="mailMe" value="yes">
+					<label for="mailMe">Add me to the mailing list for specials deal</label>
+				</div>
+			</fieldset>
+
+			<fieldset id="expInfo">
+				<div class="formRow">
+					<label>Was your service friendly?</label>
+					<fieldset class="optGroup">
+						<label for="fTrue">Yes</label>
+						<input name="Friendly" id="fTrue" value="yes" type="radio">
+				
+						<label for="fFalse">No</label>
+						<input name="Friendly" id="fFalse" value="no" type="radio">
+					</fieldset>
+				</div>
+				
+				<div class="formRow">
+					<label>Was your order correct?</label>
+					<fieldset class="optGroup">
+						<label for="cTrue">Yes</label>
+						<input name="Correct" id="cTrue" value="yes" type="radio">
+				
+						<label for="cFalse">No</label>
+						<input name="Correct" id="cFalse" value="no" type="radio">
+					</fieldset>
+				</div>
+				
+				<div class="formRow">
+					<label>Was your food hot?</label>
+					<fieldset class="optGroup">
+						<label for="hTrue">Yes</label>
+						<input name="Hot" id="hTrue" value="yes" type="radio">
+				
+						<label for="hFalse">No</label>
+						<input name="Hot" id="hFalse" value="no" type="radio">
+					</fieldset>
+				</div>
+
+				<label for="commBox">Tell us about your experience</label>
+				<textarea rows="5" cols="120" name="commBox" id="commBox">
+
+				</textarea>
+			</fieldset>
+		</form>
+
+	</section>
+	<footer>
+		<h1>ORDER</h1>
+		<a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a>
+		<a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
+		<h1>ABOUT US</h1>
+		<a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a> <a href="#">School Lunches</a>
+		<h1>CUSTOMER SERVICE</h1>
+		<a href="#">Gluten Free Crusts</a> <a href="#">Contact Us</a> <a href="#">FAQs</a>
+		<h1>MY ACCOUNT</h1>
+		<a href="#">Create an Account</a> <a href="#">Sign In</a> <a href="#">Order Status</a>
+		<h1>NUTRITION</h1>
+		<a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
+		<h1>POLICIES</h1>
+		<a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+		<address>
+			Red Ball Pizza <br />
+			811 Beach Drive <br />
+			Ormond Beach, FL 32175 <br />
+			(386) 555 - 7499
+		</address>
+	</footer>
 </body>
 
 </html>
