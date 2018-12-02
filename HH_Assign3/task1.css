@@ -1,0 +1,272 @@
+/*
+	Assignment 1
+   Author: Nguyen Nguyen
+   ID: 300298479
+   
+   Filename: styles.css
+*/
+
+@charset "utf-8";
+@font-face {
+    font-family: Quicksand;
+    src:url(Quicksand-Regular.woff) format('woff'),
+        url(Quicksand-Regular.ttf) format('ttf')
+}
+
+body {
+	color: brown;
+	font-size: 1.2em;
+	background-color: aqua;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+body > header {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+#banner_container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#header_name {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font: normal small-caps bolder 4em/1em QuickSand, Verdana, Geneva, sans-serif;
+	background-color: rgba(255, 255, 255, 0.2)
+}
+
+#header_name a {
+	text-decoration: none;
+	color: black;
+}
+
+img#headerImage {
+	width: 100%;
+}
+
+/* =============================================
+	Nav
+   =============================================
+*/
+
+nav {
+	width: 100%;
+	display: table;
+	float: none;
+}
+
+nav ul {
+	display: table-row;
+	list-style: none;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 20%;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	border: thin solid rgba(0, 0, 0, 1);
+}
+
+nav ul li a {
+	text-decoration: none;
+	font: normal small-caps bold 1em/1em QuickSand, Verdana, Geneva, sans-serif;
+	color: black;
+}
+
+/* =============================================
+	Main
+   =============================================
+*/
+
+/* General */
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+/* Main content */
+#welcome_body {
+	margin: 0;
+	display: block;
+	position: relative;
+}
+
+#studio_description {
+	font: normal small-caps bold 0.5em/1em QuickSand, Verdana, Geneva, sans-serif;
+}
+
+.main_body {
+	margin: 0;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.main_background {
+	width: 100%;
+}
+
+.main_content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div#welcome {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.6);
+	left: 20%;
+	top: 10%;
+	width: 60%;
+	height: 40%;
+}
+
+div#welcome_text {
+	font: normal normal bold 3em/2em QuickSand, Verdana, Geneva, sans-serif;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	left: 10%;
+	top: 5%;
+	width: 80%;
+	height: 50%;
+}
+
+.content {
+	list-style: none;
+	color: black;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 0px 30px;
+}
+
+.content > ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.content h1 {
+	margin-bottom: 5px;
+}
+
+.content dd {
+	list-style: none;
+	margin-inline-start: 40px;
+	margin-inline-end: 40px;
+	padding-bottom: 40px;
+}
+
+.content dt {
+	list-style: none;
+	font-size: 1.5em;
+}
+
+/* Weight Loss */
+#about_weight_loss {
+	width: 40%;
+}
+
+/* Strength */
+#about_strength {
+	width: 50%;
+}
+
+/* Membership */
+/* Weight Loss */
+#membership {
+	width: 50%;
+}
+
+/* Form */
+form {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#registration {
+	font-size: 18px;
+}
+
+.formRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 30px;
+}
+
+legend {
+	margin: 0px;
+	padding: 0px;
+}
+
+label.labelFirst {
+	width: 200px;
+}
+
+input[type=text], input[type=password] {
+	height: 15px;
+	width: 200px;
+}
+
+#button {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* =============================================
+	Footer
+   =============================================
+*/
+
+footer {
+	vertical-align: middle;
+	background-color: black;
+	height: 50px;
+}
+
+footer address {
+	height: 100%;
+}
+
+footer address div{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-style: normal;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: .7em;
+	line-height: 1em;
+	font-family: QuickSand, Verdana, Geneva, sans-serif;
+	height: 100%;
+}
+
+footer address a {
+	color: white;
+	text-decoration: none;
+}

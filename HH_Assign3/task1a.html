@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<!--
+		Assignment 1
+		Author: Nguyen Nguyen
+		ID: 300298479
+
+		File: home.html
+	-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="gym, workout, fitness, fraser valley" />
+	<title> Registration </title>
+	<link href="task1.css" rel="stylesheet" />
+	<script src="task1.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div id="banner_container">
+			<div id="header_name">
+				<a href="home.html">Fraser Valley Fitness Studio</a>
+			</div>
+			<img id="headerImage" src="Task1a_Header.jpg" alt="" />
+		</div>
+	</header>
+
+	<!-- <div id="welcome_body">
+		<div id="welcome">
+			<div id="welcome_text">
+				Registration <br />
+				
+			</div>
+		</div>
+		<img class="main_background" src="Task1a_Background.jpg" />
+	</div> -->
+
+	<form id="registrationForm" name="registrationForm" action="task1b.html" onsubmit="return validateInput()">
+		<fieldset id="customerInfo">
+			<legend>Your information</legend>
+			<div class="formRow">
+				<label class="labelFirst" for="customerFirstName">Fist Name*</label>
+				<input name="customerFirstName" id="customerFirstName" type="text" placeholder="first nane" required />
+			</div>
+	
+			<div class="formRow">
+				<label class="labelFirst" for="customerLastName">Last Name*</label>
+				<input name="customerLastName" id="customerLastName" type="text" placeholder="last name" required/>
+			</div>
+	
+			<div class="formRow">
+				<label class="labelFirst" for="customerAge">Age*</label>
+				<input name="customerAge" id="customerAge" type="text" required/>
+			</div>
+	
+			<div class="formRow">
+				<label class="labelFirst" for="customerGender">Gender*</label>
+				<select name="customerGender" id="customerGender" size="1">
+					<option value="notSelected">Not selected</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="preferNot">Prefer not to say</option>
+				</select>
+			</div>
+		</fieldset>
+		<fieldset class="customerCredentials">
+			<legend>Your credentials</legend>
+			<div class="formRow">
+				<label class="labelFirst" for="username">Username*</label>
+				<input name="username" id="username" type="text" placeholder="between 6 and 20 characters" required/>
+			</div>
+	
+			<div class="formRow">
+				<label class="labelFirst" for="password">Password*</label>
+				<input name="password" id="password" type="password" required/>
+			</div>
+	
+			<div class="formRow">
+				<label class="labelFirst" for="confirmPassword">Confirm Password*</label>
+				<input name="confirmPassword" id="confirmPassword" type="password" required/>
+			</div>
+		</fieldset>
+
+		<fieldset class="membershipType">
+			<legend>Services</legend>
+			<div class="formRow">
+				<label><input type="checkbox" id="service_0" name="service" value="gymAccess" />Gym access</label>
+				<label><input type="checkbox" id="service_1" name="service" value="activities" />Weekly activities</label>
+				<label><input type="checkbox" id="service_2" name="service" value="sonaRoom" />Sona room</label>
+				<label><input type="checkbox" id="service_3" name="service" value="personalTrainer" />Personal trainer</label>
+			</div>
+		</fieldset>
+
+		<fieldset class="Term">
+			<legend>Terms and conditions</legend>
+			<div class="formRow">
+				<input name="term" id="term" type="checkbox" required>
+				<label>By checking by this, you agree to our terms and conditions</label>
+			</div>
+		</fieldset>
+
+		<div id="buttons">
+			<input type="submit" value="Submit my survey" />
+			<input type="reset" value="Cancel">
+		</div>
+	</form>
+
+	<footer>
+		<address>
+			<div>
+				Fraser Valley Fitness Studio &#8226; 1234 Royals, Vancouver, BC &#8226; 512.555.9917 &#8226;
+				<a href="mailto:gymemail@email.com">gymemail@email.com &#8226; </a>
+				<a href="tel:+11234567890">1234567890</a>
+			</div>
+		</address>
+	</footer>
+</body>
+
+</html>
