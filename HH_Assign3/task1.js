@@ -3,7 +3,7 @@ function validateInput() {
 	var age = registrationForm.elements.customerAge.value;
 	console.log(age);
 
-	if(isNaN(age)){
+	if(isNaN(age) || parseInt(age) < 0){
 		window.alert("Invalid age");
 		return false
 	}
@@ -61,6 +61,12 @@ function validateInput() {
 		return false;
 	} else {
 		selectedServiceStr = selectedServiceStr.substr(0, selectedServiceStr.length - 2);
+	}
+
+	// Check if agree to term
+	if(!registrationForm.elements.term.checked) {
+		window.alert('Please accept to term and conditions');
+		return false;
 	}
 
 	var firstName = registrationForm.elements.customerFirstName.value;

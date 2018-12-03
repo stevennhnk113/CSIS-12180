@@ -139,11 +139,11 @@ div#welcome {
 	left: 20%;
 	top: 10%;
 	width: 60%;
-	height: 40%;
+	height: 80%;
 }
 
 div#welcome_text {
-	font: normal normal bold 3em/2em QuickSand, Verdana, Geneva, sans-serif;
+	font: normal normal bold 2.5em/2em QuickSand, Verdana, Geneva, sans-serif;
 	color: black;
 	text-align: center;
 	vertical-align: middle;

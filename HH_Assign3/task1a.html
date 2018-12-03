@@ -40,7 +40,7 @@
 		<fieldset id="customerInfo">
 			<legend>Your information</legend>
 			<div class="formRow">
-				<label class="labelFirst" for="customerFirstName">Fist Name*</label>
+				<label class="labelFirst" for="customerFirstName">First Name*</label>
 				<input name="customerFirstName" id="customerFirstName" type="text" placeholder="first nane" required />
 			</div>
 	
@@ -94,14 +94,20 @@
 
 		<fieldset class="Term">
 			<legend>Terms and conditions</legend>
+			<p>
+				These services are not refundable, transferable. While using the gym, 
+				you must follow the gym safty instructions. In addition, you must respect
+				other gym members. If you do not follow, we have the right to deny your
+				entry.
+			</p>
 			<div class="formRow">
-				<input name="term" id="term" type="checkbox" required>
-				<label>By checking by this, you agree to our terms and conditions</label>
+				<input name="term" id="term" type="checkbox">
+				<label>“I agree to these terms and conditions”</label>
 			</div>
 		</fieldset>
 
 		<div id="buttons">
-			<input type="submit" value="Submit my survey" />
+			<input type="submit" value="Register" />
 			<input type="reset" value="Cancel">
 		</div>
 	</form>
